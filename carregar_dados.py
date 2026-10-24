@@ -1,8 +1,11 @@
 "Ler o arquivo csv com os dados do Base Varejo"
 
 import pandas as pd
+import os
 
-CAMINHO_CSV = "Base Varejo.csv"
+PASTA = os.path.dirname(os.path.abspath(__file__))
+CAMINHO_CSV_ORIGINAL = os.path.join(PASTA, "Base_Varejo_Limpa.csv")  
+CAMINHO_CSV = os.path.join(PASTA, "Base_Varejo_Limpa.csv")
 
 def carregar_dados():
     df = pd.read_csv(CAMINHO_CSV, sep=";", dtype=str)
