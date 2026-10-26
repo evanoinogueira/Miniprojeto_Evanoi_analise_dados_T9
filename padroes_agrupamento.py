@@ -10,7 +10,7 @@ def mostrar_agrupamentos():
     df = carregar_dados()
 
     print("\n" + "=" * 60)
-    print("SPRINT 5 - PADRÕES DE AGRUPAMENTO")
+    print("PADRÕES DE AGRUPAMENTO")
     print("=" * 60)
 
     # Conta quantos registros existem em cada categoria.
